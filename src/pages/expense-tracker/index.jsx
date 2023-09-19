@@ -113,7 +113,7 @@ export const ExpenseTracker = () => {
             const { description, transactionAmount, transactionType } =
               transaction;
             return (
-              <li>
+              <li key={transaction.id}>
                 <h4> {description} </h4>
                 <p>
                   ${transactionAmount} •{" "}
